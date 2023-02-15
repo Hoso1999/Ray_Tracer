@@ -18,7 +18,7 @@ CMake -BBULD_DIR
 make
 ```
 ```bash
-BUILD_DIR/minirt <scene.rt>
+BUILD_DIR/minirt <scene.rt> [--save]
 ```
 Use this command for save screenshot
 ```bash
