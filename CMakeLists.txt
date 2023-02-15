@@ -5,8 +5,8 @@ OPTION (BUILD_SHARED_LIBS OFF)
 set(CMAKE_BINARY_DIR "./build")
 set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR})
 set(LIBRARY_OUTPUT_PATH ${CMAKE_BINARY_DIR})
-add_subdirectory(ft ${CMAKE_BINARY_DIR}/ft)
-add_subdirectory(ftprintf ${CMAKE_BINARY_DIR}/ftprintf)
+add_subdirectory(lib/ft ${CMAKE_BINARY_DIR}/ft)
+add_subdirectory(lib/ftprintf ${CMAKE_BINARY_DIR}/ftprintf)
 
 find_package(OpenGL REQUIRED)
 find_package(GLUT REQUIRED)
@@ -20,15 +20,15 @@ set(CMAKE_C_EXTENSIONS OFF)
 if  (APPLE)
     include_directories(
             ${PROJECT_SOURCE_DIR}/include
-            ${PROJECT_SOURCE_DIR}/ft/include
-            ${PROJECT_SOURCE_DIR}/ftprintf/include
+            ${PROJECT_SOURCE_DIR}/lib/ft/include
+            ${PROJECT_SOURCE_DIR}/lib/ftprintf/include
             ${PROJECT_SOURCE_DIR}/lib/mlx/macOS
             ${PROJECT_SOURCE_DIR}/src
             )
     file(GLOB all_SRCS
         "${PROJECT_SOURCE_DIR}/include/*.h"
-        "${PROJECT_SOURCE_DIR}/ft/include/*.h"
-        "${PROJECT_SOURCE_DIR}/ftprintf/include/*.h"
+        "${PROJECT_SOURCE_DIR}/lib/ft/include/*.h"
+        "${PROJECT_SOURCE_DIR}/lib/ftprintf/include/*.h"
         "${PROJECT_SOURCE_DIR}/lib/mlx/macOS/*.h"
         "${PROJECT_SOURCE_DIR}/src/*.c"
         )
@@ -52,15 +52,15 @@ if  (APPLE)
 else()
     include_directories(
             ${PROJECT_SOURCE_DIR}/include
-            ${PROJECT_SOURCE_DIR}/ft/include
-            ${PROJECT_SOURCE_DIR}/ftprintf/include
+            ${PROJECT_SOURCE_DIR}/lib/ft/include
+            ${PROJECT_SOURCE_DIR}/lib/ftprintf/include
             ${PROJECT_SOURCE_DIR}/lib/mlx/linux
             ${PROJECT_SOURCE_DIR}/src
             )
     file(GLOB all_SRCS
         "${PROJECT_SOURCE_DIR}/include/*.h"
-        "${PROJECT_SOURCE_DIR}/ft/include/*.h"
-        "${PROJECT_SOURCE_DIR}/ftprintf/include/*.h"
+        "${PROJECT_SOURCE_DIR}/lib/ft/include/*.h"
+        "${PROJECT_SOURCE_DIR}/lib/ftprintf/include/*.h"
         "${PROJECT_SOURCE_DIR}/lib/mlx/linux/*.h"
         "${PROJECT_SOURCE_DIR}/src/*.c"
         )

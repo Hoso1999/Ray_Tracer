@@ -6,7 +6,7 @@
 /*   By: hohayrap <hohayrap@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/20 08:42:41 by mgarcia-          #+#    #+#             */
-/*   Updated: 2021/03/31 22:25:41 by hohayrap         ###   ########.fr       */
+/*   Updated: 2023/02/15 02:49:17 by hohayrap         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include "mlx.h"
 # include "mlx_defines.h"
 # include "libft.h"
+# include "ft_printf.h"
 # include "vector.h"
 # include "figures.h"
 # include <fcntl.h>
@@ -23,6 +24,10 @@
 # include <math.h>
 # include <pthread.h>
 # include <stdio.h>
+
+# ifndef IMG_PATH
+#  define IMG_PATH          "./resources/images/"
+# endif
 
 # ifdef MACOS
 #  define OS_NAME			1

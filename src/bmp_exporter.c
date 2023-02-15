@@ -6,7 +6,7 @@
 /*   By: hohayrap <hohayrap@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/15 13:06:26 by mgarcia-          #+#    #+#             */
-/*   Updated: 2021/03/31 20:15:42 by hohayrap         ###   ########.fr       */
+/*   Updated: 2023/02/15 02:47:54 by hohayrap         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ int			create_file(char *name, int i, int j)
 	while (path && name[i])
 		if (name[i++] == '/')
 			path--;
-	ft_strcat(filename, "images/");
+	ft_strcat(filename, IMG_PATH);
 	j = 7;
 	while (name[i] && name[i] != '.')
 		filename[j++] = name[i++];
