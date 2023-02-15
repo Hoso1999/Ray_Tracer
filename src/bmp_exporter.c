@@ -6,7 +6,7 @@
 /*   By: hohayrap <hohayrap@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/15 13:06:26 by mgarcia-          #+#    #+#             */
-/*   Updated: 2023/02/15 02:47:54 by hohayrap         ###   ########.fr       */
+/*   Updated: 2023/02/15 20:31:05 by hohayrap         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,20 +17,21 @@ int			create_file(char *name, int i, int j)
 	char	*filename;
 	int		path;
 	int		fd;
+    char    *fdf_file;
 
 	path = 0;
-	filename = (char *)ec_malloc(ft_strlen(name) + 8);
-	while (name[i])
-		if (name[i++] == '/')
-			path++;
-	i = 0;
-	while (path && name[i])
-		if (name[i++] == '/')
-			path--;
-	ft_strcat(filename, IMG_PATH);
-	j = 7;
-	while (name[i] && name[i] != '.')
-		filename[j++] = name[i++];
+    j = ft_strlen(IMG_PATH);
+    fdf_file = ft_strrchr(name, '/');
+    if (!fdf_file)
+        fdf_file = name;
+    else
+       ++fdf_file;
+	filename = (char *)ec_malloc(ft_strlen(fdf_file) + j + 1);
+    ft_strcpy(filename, IMG_PATH);
+	ft_strcat(filename, "/");
+	++j;
+	while (fdf_file[i] && fdf_file[i] != '.')
+		filename[j++] = fdf_file[i++];
 	filename[j] = '\0';
 	ft_strcat(filename, ".bmp");
 	if (!((fd = open(filename, O_WRONLY | O_CREAT | O_TRUNC,
