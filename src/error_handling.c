@@ -6,7 +6,7 @@
 /*   By: hohayrap <hohayrap@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/15 13:05:30 by mgarcia-          #+#    #+#             */
-/*   Updated: 2021/03/31 21:57:29 by hohayrap         ###   ########.fr       */
+/*   Updated: 2023/02/16 21:43:28 by hohayrap         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ void		*ec_malloc(unsigned int size)
 
 void		usage(char *program_name)
 {
-	printf("Usage: %s <scene.rt>\n", program_name);
+	printf("Usage: %s <scene.rt> [--save]\n", program_name);
 	exit(EXIT_FAILURE);
 }
 
