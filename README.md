@@ -12,15 +12,17 @@ Ray Tracer with C99 standard
 # USAGE
 
 ```bash
-CMake -BBULD_DIR
+git clone https://github.com/Hoso1999/miniRT.git && cd miniRT && cmake . && make
 ```
+You can specify BUILD_DIR
 ```bash
-make
+git clone https://github.com/Hoso1999/miniRT.git && cd miniRT && cmake -S . -B BUILD_DIR && make -C BUILD_DIR
 ```
+## RUN
 ```bash
 BUILD_DIR/minirt <scene.rt> [--save]
 ```
-Use this command for save screenshot
+You can save image in bmp format using --save option
 ```bash
 BUILD_DIR/minirt <scene.rt> --save
 ```
