@@ -1,5 +1,5 @@
 # Project details
-Render simple Computer-Generated-images from specified file
+This project is about creating a simple 3D scene that render Computer-Generated-images from specified file
 
 |  EXTERNAL LIBRARIES |
 | --------------------|
