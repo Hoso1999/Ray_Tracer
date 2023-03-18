@@ -1,5 +1,5 @@
-# miniRT
-Ray Tracer with C99 standard
+# Project details
+Render simple Computer-Generated-images from specified file
 
 |  EXTERNAL LIBRARIES |
 | --------------------|
