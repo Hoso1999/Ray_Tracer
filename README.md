@@ -6,19 +6,19 @@ The aim of this project is to develop a simple ray tracer that can render variou
 Project Goals:
 
 1. Basic Ray Tracer:
-  1.1 Implement a ray tracer capable of rendering basic geometric shapes such as triangles, squares, planes, and spheres.
-  1.2 Create a camera model that allows for specifying position, orientation, and field of view.
-  1.3 Implement an ambient light source to provide uniform illumination in the scene.
-  1.4 Incorporate point light sources to introduce direct lighting and shadows.
+  1.1 Implement a ray tracer capable of rendering basic geometric shapes such as triangles, squares, planes, and spheres.<br/>
+  1.2 Create a camera model that allows for specifying position, orientation, and field of view.<br/>
+  1.3 Implement an ambient light source to provide uniform illumination in the scene.<br/>
+  1.4 Incorporate point light sources to introduce direct lighting and shadows.<br/>
 2. Optimization Features:
-  2.1. Supersampling: Implement a technique to reduce aliasing artifacts by sampling multiple points within each pixel.
-  2.2 Multithreaded Rendering: Optimize the rendering process by distributing the workload across multiple threads for faster computation.
-  2.3 Multiple Cameras: Allow the user to define multiple cameras in the scene, providing different perspectives for rendering.
-  2.4 Colored Lights: Extend the light sources to emit colored light, enhancing the realism of the rendered scene.
-  2.5 Object Specularity: Introduce the concept of specular reflection, allowing for shiny surfaces.
-  2.6 Reflection: Implement reflection of light rays off reflective surfaces, enabling the rendering of reflective objects.
-  2.7 Refraction: Incorporate the ability to handle transparent materials and simulate the bending of light as it passes through them.
-  2.8 Textured Effects: Enable the application of texture maps to objects to create realistic and detailed surfaces.
+  2.1. Supersampling: Implement a technique to reduce aliasing artifacts by sampling multiple points within each pixel.<br/>
+  2.2 Multithreaded Rendering: Optimize the rendering process by distributing the workload across multiple threads for faster computation.<br/>
+  2.3 Multiple Cameras: Allow the user to define multiple cameras in the scene, providing different perspectives for rendering.<br/>
+  2.4 Colored Lights: Extend the light sources to emit colored light, enhancing the realism of the rendered scene.<br/>
+  2.5 Object Specularity: Introduce the concept of specular reflection, allowing for shiny surfaces.<br/>
+  2.6 Reflection: Implement reflection of light rays off reflective surfaces, enabling the rendering of reflective objects.<br/>
+  2.7 Refraction: Incorporate the ability to handle transparent materials and simulate the bending of light as it passes through them.<br/>
+  2.8 Textured Effects: Enable the application of texture maps to objects to create realistic and detailed surfaces.<br/>
 
 |  EXTERNAL LIBRARIES |
 | --------------------|
