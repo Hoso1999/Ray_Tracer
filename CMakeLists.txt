@@ -16,7 +16,7 @@ include_directories( ${OPENGL_INCLUDE_DIRS}  ${GLUT_INCLUDE_DIRS} )
 
 set(CMAKE_C_STANDARD 99)
 set(CMAKE_C_STANDARD_REQUIRED ON)
-set(CMAKE_C_EXTENSIONS OFF)
+set(CMAKE_C_EXTENSIONS ON)
 
 
 if  (APPLE)
@@ -73,8 +73,7 @@ else()
     add_executable(miniRT ${all_SRCS})
     add_dependencies(miniRT minilibx ft)
     target_link_directories(miniRT PRIVATE ${CMAKE_BINARY_DIR}/ftprintf ${CMAKE_BINARY_DIR}/ft ${PROJECT_SOURCE_DIR}/lib/mlx/linux)
-    target_link_libraries(miniRT PRIVATE ft ftprintf mlx ${OPENGL_LIBRARIES} ${GLUT_LIBRARY})
-    set_target_properties(miniRT PROPERTIES LINK_FLAGS "-lm -lX11 -lXext -lpthread")
+    target_link_libraries(miniRT PRIVATE ft ftprintf mlx m X11 Xext pthread  ${OPENGL_LIBRARIES} ${GLUT_LIBRARY})
     add_custom_target(
        minilibx
        COMMAND make --silent

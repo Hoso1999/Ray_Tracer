@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "minirt.h"
+#include <sys/stat.h>
 
 int			create_file(char *name, int i, int j)
 {

@@ -35,6 +35,7 @@
 
 # ifdef LINUX
 #  define OS_NAME			2
+// #  define M_PI 3.14159265358979323846
 # endif
 
 # define BUFSIZE			32

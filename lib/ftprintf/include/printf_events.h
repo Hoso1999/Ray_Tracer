@@ -5,6 +5,7 @@
 # include <unistd.h>
 # include <stdlib.h>
 # include <stdio.h>
+# include <stdint.h>
 
 # define MAX_TYPE_SIZE 9
 # define MIN_PREC 6

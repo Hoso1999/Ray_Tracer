@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include "minirt.h"
-
+#include <math.h>
 static t_vector		set_scene_camera(int n, t_rss rss, t_minirt rt)
 {
 	double	ratio;
