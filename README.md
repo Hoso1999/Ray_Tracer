@@ -10,7 +10,7 @@ Project Goals:<br/>
   1.2 Create a camera model that allows for specifying position, orientation, and field of view.<br/>
   1.3 Implement an ambient light source to provide uniform illumination in the scene.<br/>
   1.4 Incorporate point light sources to introduce direct lighting and shadows.<br/>
-2. Optimization Features:<br/>
+2. Features:<br/>
   2.1. Supersampling: Implement a technique to reduce aliasing artifacts by sampling multiple points within each pixel.<br/>
   2.2 Multithreaded Rendering: Optimize the rendering process by distributing the workload across multiple threads for faster computation.<br/>
   2.3 Multiple Cameras: Allow the user to define multiple cameras in the scene, providing different perspectives for rendering.<br/>
